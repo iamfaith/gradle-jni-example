@@ -19,7 +19,7 @@ public class JniBridge {
         logger.info("***");
         logger.info("*** Loading JNI bridge library...");
         try {
-            System.loadLibrary("bridge");
+            System.loadLibrary("libs/bridge");
         } catch (Error | Exception e) {
             logger.error("***********************************************************************************");
             logger.error("*** Failed to load JNI bridge library: ", e);
